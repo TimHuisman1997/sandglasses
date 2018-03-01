@@ -3,13 +3,43 @@
 #include <math.h>
 #include "queues.h"
 
+// returns 1 if time <= goalTime, else return 0
+int checkGoal(){
+	
+}
 
-State action(State s, int cap1, int cap2 ) {
-  List li = newList();
-   
+
+void turnA(){
+	
+}
+
+void turnB(){
+	
+}
+
+void turnBoth(){
+
+}
+
+void doNothing(){
+	
+}
+
+
+State action(State s, int cap1, int cap2, int *isPossible, int goalTime) {
+  queue q = newEmptyQueue();
+  enQueue(s, &q);
+  while(!isPossible||!isEmptyQueue(q)){
+	State tempState = deQeueu(&q);  
+	doNothing();
+	turnA();
+	turnB();
+	turnBoth();
+   }
 }
 
 int timeable(int cap1, int cap2, int goalTime) { 
+  int isPossible; // = to be determent
   State s;
   s.time=goalTime;
   s.sg1=cap1;
