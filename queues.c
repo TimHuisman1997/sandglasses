@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <assert.h>
 #include "queues.h"
 
 Queue newEmptyQueue () {
@@ -45,10 +46,6 @@ State dequeue(Queue *qp) {
 void freeQueue (Queue q) {
 	freeList(q.list);
 }List newEmptyList() {
-  return NULL;
-}
-
-List newEmptyList() {
   return NULL;
 }
 
