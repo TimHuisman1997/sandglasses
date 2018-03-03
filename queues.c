@@ -53,7 +53,7 @@ int isEmptyList (List li) {
   return ( li==NULL );
 }
 
-void listEmptyError() {    
+void listEmptyError() {
   printf("list empty\n");
   abort();
 }
